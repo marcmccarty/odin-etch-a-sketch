@@ -14,3 +14,11 @@ function createGrid(gridSize) {
         gridContainer.appendChild(gridRow);
     }
 }
+
+function destroyGrid() {
+    if (gridContainer.hasChildNodes()) {
+        while (gridContainer.hasChildNodes()) {
+            gridContainer.firstChild.remove();
+        }
+    }
+}

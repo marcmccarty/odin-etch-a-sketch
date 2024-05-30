@@ -3,8 +3,8 @@
 }
 
 .tile {
-    width: 10px;
-    height: 10px;
+    width: 16px;
+    height: 16px;
     background-color: greenyellow;
     border: 1px;
     border-style: solid;
