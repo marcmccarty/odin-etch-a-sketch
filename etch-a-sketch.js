@@ -23,8 +23,16 @@ function createGrid(gridSize = 16) {
             const gridColumn = document.createElement("div");
             gridColumn.id = "column" + (j+1);
             gridColumn.classList.add("tile");
+            let rngRed = Math.random() * 255;
+            let rngGreen = Math.random() * 255;
+            let rngBlue = Math.random() * 255;
+            let darkness = 0;
             gridColumn.addEventListener("mouseover", () => {
-                gridColumn.style.background = "black";
+                darkness += .1;
+                gridColumn.style.background = "rgb("
+                + (rngRed * (1-darkness)) + " "
+                + (rngGreen * (1-darkness)) + " "
+                + (rngBlue * (1-darkness)) + ")";
             })
             gridRow.appendChild(gridColumn);
         }
