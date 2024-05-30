@@ -1,0 +1,12 @@
+.row {
+    display: flex;
+}
+
+.tile {
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
+}
