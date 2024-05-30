@@ -30,9 +30,9 @@ function createGrid(gridSize = 16) {
             gridColumn.addEventListener("mouseover", () => {
                 darkness += .1;
                 gridColumn.style.background = "rgb("
-                + (rngRed * (1-darkness)) + " "
-                + (rngGreen * (1-darkness)) + " "
-                + (rngBlue * (1-darkness)) + ")";
+                + (rngRed * (1 - darkness)) + " "
+                + (rngGreen * (1 - darkness)) + " "
+                + (rngBlue * (1 - darkness)) + ")";
             })
             gridRow.appendChild(gridColumn);
         }
